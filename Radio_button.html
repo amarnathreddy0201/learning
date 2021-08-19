@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+    <script>
+        function fn1() {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+            if (rd1.checked == true) {
+                alert("you clicked radio button 1 " + rd1.value);
+            } else if (rd2.checked == true) {
+                alert("you clicked radio button 2 " + rd2.value);
+            } else {
+                alert("you did not clicked any radio button")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input id="rd1" name="grp1" type="radio" value="simple snippets">Simple snippets</input><br>
+
+    <input id="rd2" name="grp1" type="radio" value="snippets">snippets</input><br>
+
+    <button id="btn1" onclick="fn1()"> Click </button>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select box</title>
+    <script>
+        function fun1() {
+            var Amar = document.getElementById("selectbox");
+            alert(Amar.options[Amar.selectedIndex].value)
+        }
+    </script>
+</head>
+
+<body>
+    <select id="selectbox">
+        <option value="one">one</option>
+        <option value="Two">Two</option>
+        <option value="Three">Three</option>
+    </select>
+    <button onclick="fun1()">click me</button>
+</body>
+
+</html>
