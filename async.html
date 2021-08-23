@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript async / await</title>
+</head>
+
+<body>
+    <p id="async"></p>
+    <script>
+        function myDisplayer(s) {
+            document.getElementById("async").innerHTML = s;
+        }
+
+        async function myfunction() {
+            AmarrEDDY = "Amarnath Reddy";
+            return AmarrEDDY;
+        }
+
+        myfunction().then(
+            function(value) {
+                myDisplayer(value);
+            },
+            function(error) {
+                myDisplayer(error);
+            }
+        );
+    </script>
+</body>
+
+</html>

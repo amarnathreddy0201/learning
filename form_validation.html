@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script type="text/javascript">
+        function Validate() {
+            var user = document.getElementById("uname");
+            var pas = document.getElementById("pass");
+
+            if (user.value.trim() == "") {
+                alert("blank user name");
+                document.getElementById("lbluser").style.visibility = "visible";
+                return false;
+            } else if (pas.value.trim() == "") {
+                alert("blank password");
+                document.getElementById("lblpass").style.visibility = "visible";
+                return false;
+            } else if (pas.value.trim().length < 5) {
+                alert("password too short");
+                document.getElementById("lblpass").style.visibility = "visible";
+                return false;
+            } else return true;
+            /*if (user.value.trim() == "" || pas.value.trim() == "") {
+                alert("blank value not allowed")
+                return false;
+            } 
+            else {
+                true;
+            }*/
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="return Validate()" action="message.html">
+        <input id="uname" placeholder="username" type="text" />
+        <label id="lbluser" style="color:red ; visibility: hidden;">invalid</label><br><br>
+
+        <input id="pass" placeholder="password" type="password" />
+        <label id="lblpass" style="color:red ; visibility: hidden;">invalid</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

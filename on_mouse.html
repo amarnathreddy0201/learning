@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Mouse</title>
+    <script>
+        function setnewImage() {
+            document.getElementById("img1").src = "Lion1.jpg";
+        }
+
+        function setoldimage() {
+            document.getElementById("img1").src = "Lion.jpg";
+        }
+    </script>
+</head>
+
+<body>
+    <img id="img1" onmouseover="setnewImage()" onmouseout="setoldimage()" src="Lion.jpg" width="700" />
+    <div class="centered">Surapureddy Amarnath Reddy</div>
+
+</body>
+
+</html>

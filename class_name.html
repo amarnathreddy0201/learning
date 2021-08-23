@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get element by class name</title>
+    <script>
+        function changeStylish() {
+            var element = document.getElementsByClassName("mypara");
+            for (var x = 0; x < element.length; x++) {
+                element[x].style.color = "red";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p id="p1" class="mypara">This is Amarnath Reddy</p>
+    <p>I am from Andhrapradesh</p>
+    <p class="mypara">I am learn things i need some help for moving forward</p>
+    <p class="mypara">I need some bustup things</p>
+    <br>
+    <button onclick="changeStylish()">Click me</button>
+</body>
+
+</html>
