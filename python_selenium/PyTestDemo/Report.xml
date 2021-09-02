@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="9" time="0.172" timestamp="2021-08-31T12:54:01.712645" hostname="DESKTOP-5KSD2AJ"><testcase classname="test_3.MyTestCase" name="test_something" time="0.002"><failure message="AssertionError: True != False">self = &lt;test_3.MyTestCase testMethod=test_something&gt;
+
+    def test_something(self):
+&gt;       self.assertEqual(True, False)  # add assertion here
+E       AssertionError: True != False
+
+test_3.py:6: AssertionError</failure></testcase><testcase classname="test_4" name="test_responcecode200" time="0.002" /><testcase classname="test_4" name="test_responcecode400" time="0.001" /><testcase classname="test_first" name="test_1" time="0.001" /><testcase classname="test_first" name="test_2" time="0.001" /><testcase classname="test_first" name="test_3" time="0.001"><failure message="AssertionError: Title doesn't match&#10;assert 'Jenkenis' is 'Jenkenis in CI server'">def test_3():
+        name="Jenkenis"
+        title="Jenkenis in CI server"
+&gt;       assert name is title ,"Title doesn't match"
+E       AssertionError: Title doesn't match
+E       assert 'Jenkenis' is 'Jenkenis in CI server'
+
+test_first.py:16: AssertionError</failure></testcase><testcase classname="test_second" name="test_login" time="0.001" /><testcase classname="test_second" name="test_checkout" time="0.001" /><testcase classname="test_second" name="test_logout" time="0.001" /></testsuite></testsuites>
